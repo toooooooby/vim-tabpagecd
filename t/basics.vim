@@ -6,7 +6,7 @@ describe 'Basics'
   end
 
   after
-    cd `=fnameescape(g:cwd)`
+    execute 'cd ' . fnameescape(g:cwd)
   end
 
   it 'should record/change the current working directory for each tab page'
